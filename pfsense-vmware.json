@@ -47,7 +47,7 @@
       "guest_os_type": "freeBSD",
       "iso_checksum": "bd1120494be5f36cba3a7ab34e8278da",
       "iso_checksum_type": "md5",
-      "iso_urls": [ "/Volumes/PORTABLE2/ISO/_SANS_and_BHIS/BHIS-Applied_Purple_Teaming/pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" ],
+      "iso_urls": [ "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" ],
       
       "shutdown_command": "sudo shutdown -p now",
       "ssh_port": 22,
