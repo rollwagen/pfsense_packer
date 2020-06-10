@@ -28,9 +28,11 @@
           "<wait>y<enter><wait5>",
           "<wait>8<enter>",
           "<wait>pkg update<wait><enter><wait5>",
-          "<wait>pkg upgrade<wait><enter><wait5>",
-          "<wait>pkg install -y sudo<wait><enter><wait5>",
-          "<wait>pkg install -y bash<wait><enter><wait5>",
+          "<wait>pkg upgrade<wait><enter><wait10>",
+          "<wait>pkg install -y sudo<wait><enter><wait10>",
+          "<wait>pkg install -y bash<wait><enter><wait10>",
+          "<wait>pkg install -y open-vm-tools-nox11<wait><enter><wait10>",
+          "<wait10>",
           "<wait>rehash<enter>",
           "<wait>pw usermod root -h 0<wait><enter>",
 	        "<wait>vagrant<enter>", 
@@ -51,6 +53,8 @@
           "<wait>",
           "<wait>reboot<enter>"
         ],
+      
+      "headless":true,
       "disk_size": 4096,
       
       "guest_os_type": "freeBSD",
@@ -69,7 +73,7 @@
         "memsize": "1024",
         "numvcpus": "1"
       }
-   
+      
   }
   ],
    
