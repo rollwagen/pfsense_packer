@@ -2,3 +2,5 @@ packer_cache
 *.box
 tmp
 pfSense-CE-2.4.5-RELEASE-p1-amd64.iso
+output-vmware-iso
+packer_cache
