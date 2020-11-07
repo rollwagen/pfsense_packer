@@ -58,8 +58,7 @@
       "disk_size": 4096,
       
       "guest_os_type": "freeBSD",
-      "iso_checksum": "bd1120494be5f36cba3a7ab34e8278da",
-      "iso_checksum_type": "md5",
+      "iso_checksum": "md5:bd1120494be5f36cba3a7ab34e8278da",
       "iso_urls": [ "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" ],
       
       "shutdown_command": "sudo shutdown -p now",
