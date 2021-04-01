@@ -2,8 +2,6 @@
   "builders": [
     {
       "type": "vmware-iso",
-        "http_directory": "http",
-        "http_port_min": "8100",
         "boot_wait": "20s",
         "boot_command": [
           "<wait5>A",
@@ -15,6 +13,8 @@
           "<wait5><wait>",
           "<wait10><wait10><wait5>",
           "<wait>n<enter><wait>",
+	  "<wait5>",
+	  "<wait><enter><wait>",
 
           "<wait10><wait10><wait10><wait5>",
           
@@ -28,7 +28,7 @@
           "<wait>y<enter><wait5>",
           "<wait>8<enter>",
           "<wait>pkg update<wait><enter><wait5>",
-          "<wait>pkg upgrade<wait><enter><wait10>",
+          "<wait>pkg upgrade -y<wait><enter><wait10>",
           "<wait>pkg install -y sudo<wait><enter><wait10>",
           "<wait>pkg install -y bash<wait><enter><wait10>",
           "<wait>pkg install -y open-vm-tools-nox11<wait><enter><wait10>",
@@ -54,13 +54,14 @@
           "<wait>reboot<enter>"
         ],
       
-      "headless":true,
+      "headless":false,
       "disk_size": 4096,
       
       "guest_os_type": "freeBSD",
-      "iso_checksum": "md5:bd1120494be5f36cba3a7ab34e8278da",
-      "iso_urls": [ "pfSense-CE-2.4.5-RELEASE-p1-amd64.iso" ],
-      
+
+      "iso_checksum": "sha256:5c9dce43d1f4188c686f11766d499ab6667edaf531fbd162213ed652c0534194",
+      "iso_urls": [ "pfSense-CE-2.5.0-RELEASE-amd64.iso" ], 
+
       "shutdown_command": "sudo shutdown -p now",
       "ssh_port": 22,
 
